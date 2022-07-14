@@ -7,6 +7,7 @@
   <meta name="Description" content="Welcome to the most extraordinary hostel in El Desierto De La Tatacoa">
   <meta name="title" content="Hostal Noches de Saturno | Desierto De La Tatacoa | Bienvenidos">
   <meta name="keywords" content="hostel,La Tatacoa hostel,Colombia hostel">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
   <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
@@ -15,19 +16,36 @@
 <body id="home">
   <!--Navbar-->
 
-  <nav id="navbar">
-    <h1 class="logo">
-      <span class="initial-image">
-        <i class="fas fa-moon"></i> Noches</span> De Saturno
-    </h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#alojamiento">Alojamientos</a></li>
-      <li><a href="#actividades">Actividades</a></li>
-      <li><a href="#como-llegar">Cómo Llegar</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <a class="navbar-brand" href="#"> <span class="initial-image">
+      <i class="fas fa-moon"></i> Noches</span> De Saturno </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#alojamiento">Alojamientos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#actividades">Actividades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#como-llegar">Cómo Llegar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+
+<!--Navbar-->
+
+
 
   <!-- Header: Showcase-->
 
@@ -39,31 +57,31 @@
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis vero necessitatibus ipsum. Iste non aliquam harum, modi neque debitis voluptas.
       </p>
-      <a href="#alojamiento" class="btn"> Más Información</a>
+      <a href="#alojamiento" class="btn" role="button"> Más Información</a>
     </div>
   </header>
 
   <!---Section: Alojamiento-->
 
-<section id="alojamiento" class="bg-light py-1">
-  <div class="container">
-    <h2 class="m-heading text-center"><span class="text-primary">Alojamientos</span></h2>
-    <div class="items">
-      <div class="item">
+<section id="alojamiento" class="py-1 host-bg pt-3">
+  <div class="container-fluid">
+    <h2 class="m-heading font-weight-bold text-center"><span class="text-light">Alojamientos</span></h2>
+    <div class="items row justify-content-md-center">
+      <div class="item  col-sm">
         <i class="fas fa-coffee fa-2x"></i>
         <div>
           <h3>Desayunos</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio, in quo architecto quae non soluta ullam repellat. Tenetur, praesentium.</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item col-sm">
         <i class="fas fa-campground fa-2x"></i>
         <div>
           <h3>Área de Camping</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio, in quo architecto quae non soluta ullam repellat. Tenetur, praesentium.</p>
         </div>
       </div>
-      <div class="item">
+      <div class="item col-sm">
         <i class="fas fa-swimming-pool fa-2x"></i>
         <div>
           <h3>Zonas Humedas</h3>
@@ -76,32 +94,34 @@
 
 <!--Section: Actividades-->
 
-<section id="actividades">
-  <div class="actividades-img"></div>
-  <div class="actividades-text bg-dark p-2">
-    <h2 class="m-heading"><span 
-      class="text-primary">Actividades</span></h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Ducimus inventore reiciendis nihil dolorem quis atque 
-      laudantium exercitationem ipsa natus libero tempore, 
-      mollitia reprehenderit odit molestias similique excepturi corrupti 
-      voluptas! Impedit.</p>
-      <h3>Nuestras Experiencias</h3>
-      <ul class="list">
-        <li>Tours por los desiertos</li>
-        <li>Clases de Fotografía</li>
-        <li>Paseos en 4 Wheels</li>
-        <li>Observación de Estrellas</li>
-        <li>Museo Arqueologíco</li>
-      </ul>
-  </div>  
-  </div>
+<section id="actividades" class="container-fluid">
+  <article class=" row">
+    <div class="actividades-img col-sm"></div>
+    <div class="actividades-text bg-dark p-2 col-sm">
+      <h2 class="m-heading text-center text-light"><span 
+        class="text-light text-center">Actividades</span></h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ducimus inventore reiciendis nihil dolorem quis atque 
+        laudantium exercitationem ipsa natus libero tempore, 
+        mollitia reprehenderit odit molestias similique excepturi corrupti 
+        voluptas! Impedit.</p>
+        <h3 class="text-center">Nuestras Experiencias</h3>
+        <ul class="list">
+          <li>Tours por los desiertos</li>
+          <li>Clases de Fotografía</li>
+          <li>Paseos en 4 Wheels</li>
+          <li>Observación de Estrellas</li>
+          <li>Museo Arqueologíco</li>
+        </ul>
+    </div>  
+    </div>
+  </article>
 </section>
 
   <!--Section: Aliados-->
 
   <section id="aliados" class="py-1">
-    <div class="container">
+    <div class="container pt-4 pb-4">
       <h2 class="m-heading text-center">
         <span class="text-primary">Nuestros</span> Aliados
       </h2>
@@ -118,8 +138,8 @@
   <section id="como-llegar">
     <div class="como-llegar">
       <h2 class="m-heading"><span 
-        class="text-primary">Cómo</span> llegar</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        class="text-light">Cómo</span> llegar</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
           Molestiae cupiditate porro possimus dolor harum, sunt ex ratione 
           ipsam recusandae doloribus illo perspiciatis, saepe deserunt molestias 
           rem, itaque soluta officiis maiores.</p>
@@ -130,8 +150,8 @@
 <!--Section: Contacto-->
 <section id="contact">
   <div class="contact-form bg-contact p-2">
-    <h2 class="m-heading">Contact Us</h2>
-    <p>Please use the form below to contact us</p>
+    <h2 class="m-heading text-center">Contact Us</h2>
+    <p class="text-center">Please use the form below to contact us</p>
     <form>
       <div class="form-group">
         <label for="name">Name</label>
@@ -160,6 +180,13 @@
     <p>Copyright &copy; 2020, Hostal Noches de Saturno, All Rights Reserved</p>
   </div>
 </footer>
+
+
+<!--Bootstrap JS --->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
 
   <!--JQuery CDN-->
 

@@ -1,37 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
-*{
+* {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   line-height: 1.4;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-p{
+p {
   padding-bottom: 0.8rem;
 }
 
 /*Utility Cases*/
-.container{
+.container {
   max-width: 1100px;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.text-primary{
+.text-primary {
   color: #fff;
 }
 
@@ -54,33 +54,44 @@ p{
   color: #fff;
 }
 
-.l-heading{
+.l-heading {
   font-size: 4rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
-.m-heading{
+.m-heading {
   font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
-.lead{
+.lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
-.py-1 { padding: 1.5rem 0;}
-.py-2 { padding: 2rem 0;}
-.py-3 { padding: 3rem 0;}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
 
-.p-1 { padding: 1.5rem;}
-.p-2 { padding: 2rem;}
-.p-3 { padding: 3rem;}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 
-
-.btn{
+.btn {
   display: inline-block;
   color: #fff;
   background: #70300f;
@@ -89,11 +100,11 @@ p{
   border-radius: 5px;
 }
 
-.btn:hover{
+.btn:hover {
   background: #83789c;
 }
 
-.btn-dark{
+.btn-dark {
   background: #333;
   color: #fff;
 }
@@ -108,9 +119,14 @@ p{
   border-bottom: #e17218 dotted 1px;
 }
 
-
 /*Navbar*/
-#navbar{
+
+.navbar-brand,
+.initial-image {
+  color: white !important;
+}
+
+#navbar {
   display: flex;
   align-items: left;
   position: sticky;
@@ -122,31 +138,31 @@ p{
   padding: 1rem;
 }
 
-#navbar ul{
+#navbar ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-#navbar ul li a{
+#navbar ul li a {
   color: #fff;
   padding: 0.75rem;
   margin: 0 0.25rem;
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
   background: #83789c;
   border-radius: 5px;
 }
 
 /*Showcase*/
 #showcase {
-  background: #70300f url('../img/showcase.jpg') no-repeat center center/cover;
+  background: #70300f url("../img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #fff;
 }
 
-#showcase .showcase-content{
+#showcase .showcase-content {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -155,33 +171,36 @@ p{
   height: 100%;
   padding: 0 2rem;
 
-/*Overlay*/
+  /*Overlay*/
   position: absolute;
   top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
   background: none;
-
 }
-/*Section: hospedajes*/  
+/*Section: hospedajes*/
 
-#alojamiento .items{
+#alojamiento .items {
   display: flex;
   padding: 1rem;
 }
 
-#alojamiento .items .item{
-  flex:1;
+#alojamiento .items .item {
   text-align: center;
   padding: 1rem;
 }
 
-#alojamiento .items .item i{
+#alojamiento .items .item i {
   background: #a84e13;
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+.host-bg {
+  background: #83789c;
+  color: #fff;
 }
 
 /*Section: Actividades*/
@@ -189,22 +208,17 @@ p{
   display: flex;
 }
 
-#actividades div{
-  flex:1;
-}
-
-#actividades .actividades-img{
+#actividades .actividades-img {
   background: url(../img/actividad2.jpg) no-repeat center center/cover;
 }
 
 /*Section: Aliados*/
 
-#aliados .text-primary{
+#aliados .text-primary {
   color: #70300f;
 }
-  
 
-#aliados .items{
+#aliados .items {
   display: flex;
 }
 
@@ -213,7 +227,6 @@ p{
   margin: auto;
   width: 60%;
 }
-
 
 /* Section: Como llegar*/
 
@@ -228,7 +241,7 @@ p{
   padding: 1.5rem 1.5rem;
 }
 
-#como-llegar .como-llegar .m-heading{
+#como-llegar .como-llegar .m-heading {
   padding: 0 170px;
 }
 
@@ -239,20 +252,20 @@ p{
 
 /*Section: Contact*/
 
-
-#contact{
+#contact {
   display: flex;
 }
 
-#contact .map, #contact .contact-form {
+#contact .map,
+#contact .contact-form {
   flex: 1;
 }
 
-#contact .contact-form .form-group{
+#contact .contact-form .form-group {
   margin: 1rem;
 }
 
-#contact .contact-form label{
+#contact .contact-form label {
   display: block;
 }
 
