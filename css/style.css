@@ -232,13 +232,15 @@ p {
 
 #como-llegar {
   display: flex;
+  height: 300px;
 }
 
 #como-llegar .como-llegar {
   background: #83789c;
   color: #fff;
   align-self: center;
-  padding: 1.5rem 1.5rem;
+  padding: 3.5rem 1.5rem;
+  height: 300px;
 }
 
 #como-llegar .como-llegar .m-heading {
